@@ -1,0 +1,183 @@
+/* 전체 위치 확인 + 색배치 */
+html {
+    background-color:rgb(27, 27, 29);
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* body * {
+    border: 1px solid white;
+} */
+
+input{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgb(42, 52, 82);
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    color: whitesmoke;
+    outline-style: none;
+}
+
+input:focus{
+    background-color: rgb(29, 37, 59);
+}
+
+input:focus::placeholder{
+    color: rgb(42, 52, 82);
+}
+
+textarea {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(42, 52, 82);
+    border-radius: 4px;
+    padding: 0.5rem;
+    color: whitesmoke;
+    resize: none;
+}
+/* 크게 3가지로 분리 */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+/* 가운대 3가지로 분리 */
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+/* 해드를 크게 2분류로 나눔 */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 왼쪽을 모아둠 */
+.miniheader {
+    display: flex;
+    flex-direction: row;
+}
+/* header 크기 마추기 */
+header {
+    margin: 8px;
+    padding: 8px;
+}
+.miniheader :nth-child(2){
+    margin: 0 1em;
+}
+/* 가운대 크기 마추기 */
+.wrapper > * {
+    padding: 8px;
+}
+/* nav 크기 마추기 */
+nav {
+    background: linear-gradient(180deg,rgb(29,140,248), rgb(51,88,244));
+    border-radius: 4px;
+    margin: 8px;
+    padding: 8px;
+    flex: 1;
+    font-size: small;
+}
+
+nav p{
+    margin: 0 5px;
+    color: rgba(0, 0, 0, 0);
+}
+
+#nav_title{
+    justify-content: center;
+    padding-top: 8px;
+}
+
+nav :first-child > div {
+    font-size: medium;
+    font-weight: bolder;
+    display:inline-block;
+    padding-right: 0;
+    padding-left: 0.5rem;
+    width: 110px;
+}
+
+nav > a {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+nav div{
+    padding: 0 1em;
+}
+
+#nav_hr{
+    border-color: rgba(255, 255, 255, 0.5);
+    margin: 0px;
+    margin-bottom: 1rem;
+}
+
+main{
+    color: rgb(168, 166, 165);
+    font-size: small;
+    background-color: rgb(39, 41, 61);
+    border-radius: 4px;
+    margin: 8px;
+    padding: 8px;
+    flex: 1;
+}
+
+main > div{
+    margin: 2rem 0;
+}
+
+#main_title{
+    margin: 0;
+    color: whitesmoke;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+#main_tail{
+    margin-bottom: 0;
+    width: 350px;
+}
+
+.minimain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main > div {
+    display:flex;
+    flex-direction: column;
+}
+
+.minimain > div{
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0 5px;
+}
+
+aside{
+    color: rgb(168, 166, 165);
+    font-size: small;
+    background-color: rgb(39, 41, 61);
+    border-radius: 4px;
+    margin: 8px;
+    padding: 8px;
+    flex: 1;
+}
+
+footer{
+    margin-top: auto;
+}
